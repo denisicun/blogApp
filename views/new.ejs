@@ -1,0 +1,22 @@
+<% include ./partials/header %>
+
+    <div class="ui main text container segment">
+        <div class="ui huge header">New post</div>
+        <form class="ui form" action="/blogs" method="post">
+            <div class="field">
+                <lable>Title</lable>
+                <input type="text" placeholder="Title" name="blog[title]">
+            </div>
+            <div class="field">
+                <lable>Image</lable>
+                <input type="text" placeholder="Image" name="blog[image]">
+            </div>
+            <div class="field">
+                <lable>Post content</lable>
+                <textarea name="blog[body]" placeholder="Post goes here"></textarea>
+            </div>
+            <input class="ui green big inverted button" type="submit">
+        </form>
+    </div>
+
+<% include ./partials/footer %>
